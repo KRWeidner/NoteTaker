@@ -3,7 +3,7 @@ const express = require('express');
 // Import files containing routes
 const notesRouter = require('./notes');
 
-// Create and instance of express
+// Create an instance of express
 const app = express();
 
 app.use('/notes', notesRouter);
