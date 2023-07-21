@@ -22,7 +22,7 @@ notes.post('/', (req, res) => {
             title,
             text
         };
-
+        //get file and add new note to file
         readAndAppend(newNote, './db/db.json');
 
         const response = {
@@ -42,12 +42,13 @@ notes.delete('/:id', (req, res) => {
 
     readFromFile('./db/db.json').then((data) => {
         const file = JSON.parse(data);
-
+        //check if any notes contains req id to delete
         const found = file.some(x => x.id === req.params.id);
 
         if (found) {
+            //if found, get all results that don't match req id
+            //and write those results to file and return
             const filtered = file.filter(x => x.id !== req.params.id);
-            console.log(filtered);
             writeToFile('./db/db.json', filtered)
             res.json(filtered);
         }
