@@ -16,7 +16,7 @@ app.use('/api', api);
 
 // GET route for the homepage
 app.get('/', (req, res) =>
-  res.sendFile(path.join(__dirname, './public/index.html'))
+  res.sendFile(path.join(__dirname, './index.html'))
 );
 
 // GET route for the notes page
