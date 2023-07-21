@@ -1,6 +1,12 @@
 [
     {
-        "title":"Test Title",
-        "text":"Test text"
+        "id": "0dc8",
+        "title": "DEL",
+        "text": "delete thid"
+    },
+    {
+        "id": "6d72",
+        "title": "KEEP",
+        "text": "Keep this note"
     }
 ]
