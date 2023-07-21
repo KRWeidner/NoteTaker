@@ -1,7 +1,12 @@
 [
     {
-        "id": "6d72",
-        "title": "KEEP",
-        "text": "Keep this note"
+        "id": "dad3",
+        "title": "Grocery List",
+        "text": "Get Milk and Eggs."
+    },
+    {
+        "id": "cf18",
+        "title": "Packing List",
+        "text": "pack shirts for trip"
     }
 ]
